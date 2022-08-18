@@ -1,0 +1,134 @@
+h1,h2,h3,p,a,ul,li{margin: 0; padding: 0; text-decoration: none;}
+
+html body{
+     margin: 0;
+    font-family: 'Roboto', sans-serif;font-size: 0.9em; 
+}
+
+header{ background-color: #f2f2f2; 
+    padding: 0 0 0.3em 0; margin: 0 0 2em 0; 
+    border-bottom: 1px solid #c0c0c0; }
+
+section{ min-height: 700px; }
+
+footer{background-color: #f2f2f2; 
+    border-top: 1px solid #c0c0c0;
+     margin: 2em 0 0 0; text-align: center; 
+     padding: 20px 0;}
+
+.conteneur{max-width: 1170px;
+     margin: 0 auto; 
+     border: 1px dotted;}
+
+.clear{
+    clear: both;
+}
+
+.haut-gauche{
+    float: left;
+    width: 70%;
+   
+    
+}
+
+.haut-droite{
+    float: right;
+    width: 25%;
+    height: 75px;
+   
+}
+
+nav{
+    margin: 0;
+    text-align: center;
+   
+  /* min-height: 30px;*/
+}
+
+.milieu-haut-gauche{
+    float: left;
+    width: 30%;
+   background-color: #074eee;
+}
+
+.milieu-haut-droite{
+    float: left;
+    width: 70%;
+    font-size: 1.2em;
+    vertical-align: middle; 
+    display: table;
+    line-height: 1.3em;
+    text-align: center;
+    height: 20vh;
+   background-color: #bcbe00;
+}
+
+.milieu-gauche{
+    float: left;
+    width: 60%;
+    margin: 1.5em 0  1.5em 0;
+    background: #074eee;
+}
+
+.milieu-droite{
+    float: right;
+    width: 30%;
+    margin: 1.5em 0 1.5em 0;
+    background-color: #bcbe00;
+}
+
+
+.haut-gauche h1{
+    color: #000000;
+    font-size: 1.7em;
+    margin: 10px 0 0 55px;
+    text-shadow: 1px 1px 1px;
+
+}
+
+.haut-gauche h2{
+    margin: 5px 0 0 0;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+.haut-gauche h2 span{
+    color: #8daab7;
+}
+
+.haut-droite a{
+    color: #8daab7;
+    display: block;
+    text-align: right;
+}
+
+.haut-droite a:first-child{
+    margin: 10px 0 0 0;
+}
+
+.haut-droite a:hover{
+   text-decoration: underline;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+}
+
+nav a{
+  display: inline-block;
+  line-height: 30px;
+  color: #000000;
+  padding: 0.5%;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #8daab7;
+    border-radius: 10px;
+    transition: padding .2s;
+}
+/*
+.bleu{ color: #8daab7;}
+.gras{ font-weight: bold;}
+/*.italic{font-style: italic;}*/
