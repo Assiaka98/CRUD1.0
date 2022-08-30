@@ -1,0 +1,132 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="zoning.css" />
+        <title></title>
+    </head>
+    <body>
+        <div id="conteneur">
+            <header>
+                
+            </header>
+            <nav>
+                <p>Mon TP responcive : Issiaka TRAORE</p>
+            </nav>
+            <section>
+                <div class="zone a"><p>Bloc 1</p></div>
+                <div class="zone b"><p>Bloc 2</p></div>
+                <div class="clear"></div>
+                <div class="zone c"><p>Bloc 3</p></div>
+                <div class="zone d"><p>Bloc 4</p></div>
+                <div class="clear"></div>
+            </section>
+            <footer>
+                <button id="btn">Cliquez-Moi</button>
+            </footer>
+            <form>
+                <label for="prenom">Prenom</label><br> 
+                <input type="text" id="prenom" placeholder="Votre Prenom" class="form-control"><br>
+                
+
+                <label for="nom">Nom</label><br>
+                <input type="text" id="nom" class="form-control" placeholder="Votre Nom" ><br>
+                
+
+                <label for="mail">E-mail</label><br>
+                <input type="mail" id="email" class="form-control" placeholder="E-mail" required="required"><br>
+                <span id="mail_m"></span><br>
+
+
+
+
+                <label for="commentaire">Commentaire</label><br>
+                <textarea id="message" class="form-control" placeholder="Votre Commentaire ..." ></textarea><br>
+                <button type="submit" id="submit">Soumettre</button>
+            </form>
+            <div id="affichage">
+
+            </div>
+              <div class="clear"></div>
+        </div>
+        <script>
+          
+            var btn=document.getElementById('btn');
+            var selecZone =document.querySelectorAll('.zone');
+            btn.addEventListener('click',changeFond);
+            function changeFond()
+            {
+                for(let i =0 ; i<4; i++)
+                {
+                  
+                    selecZone[i].classList.toggle('fond');
+                }               
+            }
+        </script>
+
+        <script>
+          
+          var validation = document.getElementById('submit');
+          var mail =document.getElementById('email');
+          var mail_m = document.getElementById('mail_m');
+          const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+          validation.addEventListener('click', f_valid);
+
+          function f_valid(e){
+            if(mail.validity.valueMissing)
+            {
+              e.preventDefault();
+              mail_m.textContent='E-mail manquant';
+              mail_m.style.color='orange';
+            }else if(regexEmail.test(mail.value) ==false){
+              event.preventDefault();
+              mail_m.textContent='Forma Incorrect';
+              mail_m.style.color='red';
+            }
+            else{}
+            
+          }
+        </script>
+
+  <script>
+    let inputs = document.getElementsByClassName("form-control");
+    const data = {};
+    const infos = [];
+    let inputsLength = inputs.length;
+    for (let i = 0; i < inputsLength; i++) 
+    {
+      inputs[i].addEventListener("keyup", function () {
+      const id = inputs[i].id;
+      const value = inputs[i].value;
+      data[id] = value;});
+    }
+
+  const resetInputs = () => 
+  {
+    for (let i = 0; i < inputsLength; i++) 
+    {
+      inputs[i].value = "";
+    }
+  };
+
+  const submitBtn = document.getElementById("submit");
+  submitBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  infos.push(data);
+  const result = document.getElementById("affichage");
+  
+  resetInputs();
+  result.innerHTML = 
+  ` <p>Prenom: ${data.prenom}</p>
+    <p>Nom: ${data.nom}</p>
+    <p>Email: ${data.email}</p>
+    <p>Message: ${data.message}</p>`;
+  console.log(infos);
+});
+        </script>
+    </body>
+</html>
+
