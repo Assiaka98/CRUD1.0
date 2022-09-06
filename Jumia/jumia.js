@@ -1,6 +1,5 @@
 let img_slider =document.getElementsByClassName("img_slider");
 
-
 let etape = 0;
 
 let nbr_img = img_slider.length;
@@ -52,25 +51,25 @@ const next = document.querySelector('.next');
 back.disabled = true;
 
 const footer_slide=()=>{
-    const img_f=document.querySelectorAll('.img_f');
-    const img_f10=document.querySelectorAll('.img_f10');
+    const img_f = document.querySelectorAll('.img_f');
+    const img_f10 = document.querySelectorAll('.img_f10');
     for(let i =0; i<img_f.length; i++)
     {
         const slide1 = img_f[i];
         const slide2 = img_f10[i];
         if(slide1.display == 'block')
         {
-            slide1.style.display='none';
-            slide2.style.display='block';
-            next.disabled=true;
-            back.disabled=false;
+            slide1.style.display = 'none';
+            slide2.style.display = 'block';
+            next.disabled = true;
+            back.disabled = false;
         }
         else
         {
-            slide1.style.display='block';
-            slide2.style.display='none';
-            next.disabled=false;
-            back.disabled=true;
+            slide1.style.display = 'block';
+            slide2.style.display = 'none';
+            next.disabled = false;
+            back.disabled = true;
         }
     }   
 }
