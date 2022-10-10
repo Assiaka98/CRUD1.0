@@ -1,0 +1,83 @@
+
+.titre{ padding: 5px; text-align: left;}
+.clear{ clear: both; }
+header{ background: #5A87BC;/* #000000;*/ padding: 5px; text-align: center;}
+
+header nav{ display: inline; }
+
+header a{ color: #000000; text-decoration: none; padding: 5px; font-style: normal; }
+
+header nav a:hover{ background: #04baf6;}
+
+footer .conteneur{ background: #5A87BC;; color:#000000;; text-align: center; padding: 7px 0;}
+.erreur{ background: #ff0000; padding: 5px; margin: 5px; }
+.validation{ background: #669933; padding: 5px; margin: 5px; }
+.inscrip_employes 
+{
+  background: #dde0e2;  
+  padding-left: 35%;
+ 
+}/*
+.container{
+  background: #dde0e2;  
+  padding-left: 35%;
+}
+.container form{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}*/
+.inscrip_employes  form
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+.container{
+  box-shadow: 5px 6px 4px rgba(255, 250, 250, 0.25);
+font-size: 18px;
+  padding-left: 35%;
+  box-sizing: border-box;
+/*display: flex;
+justify-content: baseline;
+position: absolute;
+width: 522px;
+height: 208px;
+left: 320px;
+top: 155px;*/
+
+background: #FDFEFF;
+/*border: 2px solid #5A87BC;*/
+}
+
+.case{ 
+  box-sizing: border-box;
+margin-bottom: 25px;
+margin-top: 25px;
+
+position: absolute;
+width: 300px;
+height: 34px;
+
+background: #FFFDFD;
+border: 1px solid #5A87BC;
+border-radius: 6px;
+}
+
+.btn{
+
+  box-sizing: border-box;
+color: whITE;
+
+  width: 191px;
+  height: 34px;
+
+  background: #5A87BC;
+  border: 1px solid #5A87BC;
+  border-radius: 6px; 
+
+}
+
+.btn :hover{
+  background-color: #000000;
+}
