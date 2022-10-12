@@ -30,3 +30,19 @@ CREATE TABLE eleves(
     cp INT(5) NOT NULL,
     adresse VARCHAR(10) NOT NULL
 )ENGINE = InnoDB;
+
+CREATE TABLE archive(
+    id_eleve INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    prenom_eleves VARCHAR(20) NOT NULL,
+    nom_eleves VARCHAR(20) NOT NULL,
+    sexe ENUM('m','f') NOT NULL,
+    classe ENUM('6eme','5eme','4eme','3eme') NOT NULL,
+    prenom_tuteur VARCHAR(20) NOT NULL,
+    nom_tuteur VARCHAR(20) NOT NULL,
+    email_tuteur VARCHAR(50) NOT NULL,
+    num_tel INT(9) NOT NULL,
+    profession VARCHAR NOT NULL,
+    ville VARCHAR(20) NOT NULL,
+    cp INT(5) NOT NULL,
+    adresse VARCHAR(10) NOT NULL
+)ENGINE = InnoDB;

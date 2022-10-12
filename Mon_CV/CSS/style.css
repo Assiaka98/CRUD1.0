@@ -1,54 +1,51 @@
-h1,h2,h3,p,a,ul,li{margin: 0; padding: 0; text-decoration: none;}
+h1,h2,h3,p,a,ul,li{
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+}
 
 html body{
      margin: 0;
     font-family: 'Roboto', sans-serif;font-size: 0.9em; 
 }
 
-header{ background-color: #f2f2f2; 
-    padding: 0 0 0.3em 0; margin: 0 0 2em 0; 
-    border-bottom: 1px solid #c0c0c0; }
-
-section{ min-height: 700px; }
-
-footer{background-color: #f2f2f2; 
-    border-top: 1px solid #c0c0c0;
-     margin: 2em 0 0 0; text-align: center; 
-     padding: 20px 0;}
-
-.conteneur{max-width: 1170px;
-     margin: 0 auto; 
-     border: 1px dotted;}
-
-.clear{
-    clear: both;
+header{
+    background-color: #f2f2f2; 
+    padding: 0 0 0.3em 0; 
+    margin: 0 0 3em 0; 
+    border-bottom: 1px solid #c0c0c0; 
 }
+
+section{ min-height: 700px;}
+
+.conteneur{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
 
 .haut-gauche{
     float: left;
-    width: 70%;
-   
-    
+    width: 70%;   
 }
 
 .haut-droite{
     float: right;
     width: 25%;
-    height: 75px;
-   
+    height: 75px;   
 }
 
 nav{
     margin: 0;
     text-align: center;
+    min-height: 30px;
    
-  /* min-height: 30px;*/
 }
 
 .milieu-haut-gauche{
     float: left;
     width: 30%;
-   background-color: #074eee;
 }
 
 .milieu-haut-droite{
@@ -60,21 +57,19 @@ nav{
     line-height: 1.3em;
     text-align: center;
     height: 20vh;
-   background-color: #bcbe00;
+
 }
 
 .milieu-gauche{
     float: left;
     width: 60%;
     margin: 1.5em 0  1.5em 0;
-    background: #074eee;
 }
 
 .milieu-droite{
     float: right;
     width: 30%;
-    margin: 1.5em 0 1.5em 0;
-    background-color: #bcbe00;
+    margin: 1.5em 0  1.5em 0;
 }
 
 
@@ -128,7 +123,190 @@ nav a:hover{
     border-radius: 10px;
     transition: padding .2s;
 }
-/*
+
 .bleu{ color: #8daab7;}
 .gras{ font-weight: bold;}
-/*.italic{font-style: italic;}*/
+.italic{font-style: italic;}
+
+.milieu-haut-gauche{
+    float: left;
+    width: 30%;
+}
+
+.milieu-haut-droite{
+    float: left;
+    width: 70%;
+    font-size: 1.2em;
+    vertical-align: middle;
+    display: table;
+    line-height: 1.3em;
+    text-align: center;
+    height: 20vh;
+}
+
+.milieu-haut-droite p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.milieu-gauche h2{
+    color: #8daab7;
+    padding: 0.5em;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.milieu-bas-competences h2{
+    color: #000000;
+    font-size: 1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    border-bottom: none ;
+    border-top: none;
+}
+
+
+.milieu-gauche-profil{ float: left; width: 15%;}
+
+.milieu-droite-profil{float: left; margin-left: 5%; 
+    width: 80%; padding: 1em 0 0 0;}
+
+.milieu-bas-competences{ margin: 3em 0 0 0; }
+
+.milieu-bas-competences-design{
+    
+    width: 21%; 
+    float: left; 
+    margin-right: 5%;
+    text-align: center;
+    min-height: 300px;
+}
+
+.milieu-bas-competences-integration{
+    
+    width: 21%; 
+    float: left; 
+    margin-right: 5%;
+    text-align: center;
+    min-height: 300px;
+}
+
+.milieu-bas-competences-developpement{
+  
+    width: 21%; 
+    float: left; 
+    margin-right: 5%;
+    text-align: center;
+    min-height: 300px;
+}
+
+.milieu-bas-competences-referencement{
+    
+    width: 21%; 
+    float: left; 
+    text-align: center;
+    min-height: 300px;
+
+}
+
+
+.milieu-bas-competences img{ transition: 0.5s;}
+.milieu-bas-competences img:hover{transform: rotate(-360deg);}
+
+.img-responsive{width: 100%;}
+.img-responsive70{width: 70%;}
+
+.milieu-droite ul li{
+    list-style-type: none;
+    /*background: url() left center no-repeat;*/
+    padding: 0 0 0 30px;
+    margin: 3% 0;
+}
+
+.milieu-droite ul ul{
+    display: none;
+}
+.milieu-droite ul.niveau1 :hover ul.niveau2 {
+    display: block;
+}
+.milieu-droite .cadre{
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.milieu-droite .cadre:first-child{margin: 0;}
+
+.milieu-droite .cadre h2{
+    color: #333333;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+    background: #f2f3f3;
+    border-bottom: 1px solid #c0c0c0;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.milieu-droite .cadre p{padding: 10px;}
+
+.milieu-droite .cadre form{padding: 10px;}
+
+.milieu-droite .cadre ul li{
+    margin: 10px 0 0 30px;
+    padding: 5px;
+}
+
+input[type="submit"]{
+    color: #ffffff;
+    background-color: #8daab7;
+    margin: 1em 0 0 0;
+    border-color: #222;
+    display:inline-block;
+    padding: .5em 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: .2em;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover{background: #000;}
+input{width: 100%;}
+textarea{resize: none;width: 100%;}
+
+
+footer{
+    background-color: #f2f2f2; 
+    border-top: 1px solid #c0c0c0;
+    margin: 2em 0 0 0; 
+    text-align: center; 
+    padding: 20px 0;
+}
+
+footer a {color:#8daab7 ;}
+footer a:hover{text-decoration:underline;}
+
+footer p{margin: 7px 0 0 0;}
+
+@media (max-width:768px){
+    .haut-gauche{width: 100%; margin-bottom: 1em;}
+    .haut-gauche h2{letter-spacing: .1em;}
+    .haut-droite {display:none;}
+    nav a{display: block;}    
+
+    .milieu-gauche{width: 100%;}
+    .milieu-droite{width: 100%;}
+    .milieu-droite .cadre{width:100%;}
+    .milieu-haut-gauche, .milieu-haut-droite{width: 100%;}
+    .milieu-bas-competences-design{width: 40%;}
+    .milieu-bas-competences-integration{width: 40%;}
+    .milieu-bas-competences-developpement{width: 40%;}
+    .milieu-bas-competences-referencement{width: 40%;}
+}

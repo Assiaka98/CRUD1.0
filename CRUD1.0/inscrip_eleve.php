@@ -6,22 +6,10 @@
        $verif_caractere = preg_match('#^[a-zA-Z0-9._-]+$#', $_POST['email']);
        if(!$verif_caractere && (strlen($_POST['email']) < 3 || strlen($_POST['email']) > 20) ) 
        {
-          $contenu .= "<div class='erreur'>Veuillez saisir un mail correcte S.V.P</div>";  
+          //$contenu .= "<div class='erreur'>Veuillez saisir un mail correcte S.V.P</div>";  
        }
-       else
-           {
-               $employes = executeRequete("SELECT * FROM employes WHERE email = '$_POST[email]'");
-               if($employes->rowCount()!= 0)
-               {
-                   $contenu .= "<div class='erreur'>Vous avez deja un compte <a href=\"conect_emp.php\"><u>Cliquez ici pour vous connecter</u></a>.</div>";
-                   echo "$contenu";
-               }
-               else
-               {
-                   foreach($_POST as $indice => $valeur)
-                   {
-                       $_POST[$indice] = htmlEntities(addSlashes($valeur));
-                   }
+      
+              
                    executeRequete("INSERT INTO eleves (prenom, nom,  sexe, classe, prenom_t, nom_t, email, tel, profession,  date_inscrip, montant) 
                    VALUES ('$_POST[prenom]','$_POST[nom]','$_POST[sexe]', '$_POST[classe]', 
                    '$_POST[prenom_t]','$_POST[nom_t]', '$_POST[email]', '$_POST[tel]', 
@@ -31,8 +19,8 @@
                       l eleve a bien ete a inscrit
                    </div>";
                    echo "$contenu";
-               }
-           }
+               
+           
     }   
 ?>
 

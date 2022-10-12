@@ -18,22 +18,20 @@ header{
 
 
 nav{
-    
     text-align: center;
     margin: 0;
-    padding: .01em 0 .01em 0;
-}
-.nave{padding: .1em 0 .1em 0;}
-.nave_gauche{
-    float: left;
-    width: 20%;
-    color: #f68b1e;
-    font-size: 1em;
-    font-weight: 500;
-    align-items: center;
 }
 
-.nave_droite{float: left;width: 80%;color: transparent;}
+.nave_gauche{
+    float: left;
+    width: 10%;
+    color: #f68b1e;
+    font-size: 1.1em;
+    font-weight: 500;
+   /* align-items: center;*/
+}
+
+.nave_droite{float: left;width: 90%;color: transparent;}
 nav li{
     display: inline;
     list-style: none;    
@@ -41,10 +39,9 @@ nav li{
 
 nav a{
     display: inline-block;
-    line-height: 30px;
+    line-height: 25px;
     padding: 0.5%;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 .nave_gauche a:hover{
@@ -103,19 +100,17 @@ footer img{
     }
 
 
-.milieu-haut{background-color: white;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%); }
+.milieu-haut{
+    background-color: white;
+    padding: 1em 0 1em 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%); }
 
 .milieu-haut-gauche{
     float: left;
     width: 10%;
-    margin: 1em 0 1em 0;
+   /* margin: 1em 0 1em 0;*/
 }
 .milieu-haut-gauche img{max-width: 100%;}
-.milieu-haut-gauche a{
-    
-    font-size: 3em;
-    color: #000;
-}
 
 .milieu-haut-centre{
     float: left;
@@ -203,8 +198,8 @@ footer img{
 .categories li{list-style: none; margin: .4em 0  1.5em .5em;}
 .milieu-centre-milieu{
     float: left;
-    width: 60%;
-    
+    width: 60%; 
+    margin-left: .1em;
 }   
 
 .slide{
